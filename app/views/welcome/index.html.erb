@@ -101,8 +101,8 @@
         function testAPI() {
           console.log('Welcome!  Fetching your information.... ');
           FB.api('/me', function(response) {
-debugger
             console.log('Successful login for: ' + response.name);
+debugger
             document.getElementById('status').innerHTML =
               'Thanks for logging in, ' + response.name + '!';
           });
